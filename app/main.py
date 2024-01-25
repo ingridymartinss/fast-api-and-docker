@@ -18,8 +18,5 @@ async def users():
         name = fake.name()
         city = fake.city()
         age = random.randint(18, 99)
-        if users:
-            users.append({'name': name, 'city': city, 'age': age})
-        else:
-            users = [{'name': name, 'city': city, 'age': age}]
+        users.append({'name': name, 'city': city, 'age': age})
     return users
